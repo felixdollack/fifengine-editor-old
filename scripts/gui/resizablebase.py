@@ -108,21 +108,21 @@ class ResizableBase(object):
 		bottom	= event.getY() - titleheight > self.height-5 and self.resizable_bottom
 
 		if left and top:
-			cursor.set(fife.NC_RESIZENW)
+			cursor.set(fife.NC_RESIZEALL)
 		elif right and top:
-			cursor.set(fife.NC_RESIZENE)
+			cursor.set(fife.NC_RESIZEALL)
 		elif left and bottom:
-			cursor.set(fife.NC_RESIZESW)
+			cursor.set(fife.NC_RESIZEALL)
 		elif right and bottom:
-			cursor.set(fife.NC_RESIZESE)
+			cursor.set(fife.NC_RESIZEALL)
 		elif left:
-			cursor.set(fife.NC_RESIZEW)
+			cursor.set(fife.NC_RESIZEWE)
 		elif right:
-			cursor.set(fife.NC_RESIZEE)
+			cursor.set(fife.NC_RESIZEWE)
 		elif top:
-			cursor.set(fife.NC_RESIZEN)
+			cursor.set(fife.NC_RESIZENS)
 		elif bottom:
-			cursor.set(fife.NC_RESIZES)
+			cursor.set(fife.NC_RESIZENS)
 		else:
 			self._restoreCursor()
 			return
