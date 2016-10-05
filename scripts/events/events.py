@@ -146,7 +146,7 @@ class EventListener:
 			self.shiftPressed = True
 		elif keyval in (fife.Key.LEFT_ALT, fife.Key.RIGHT_ALT):
 			self.altPressed = True
-		elif keyval in (fife.Key.RIGHT_META, fife.Key.LEFT_META):
+		elif keyval in (fife.Key.LEFT_SUPER, fife.Key.RIGHT_SUPER):
 			self.metaPressed = True
 	
 		elif keyval == fife.Key.ESCAPE:
@@ -179,7 +179,7 @@ class EventListener:
 			self.shiftPressed = False
 		elif keyval in (fife.Key.LEFT_ALT, fife.Key.RIGHT_ALT):
 			self.altPressed = False
-		elif keyval in (fife.Key.RIGHT_META, fife.Key.LEFT_META):
+		elif keyval in (fife.Key.LEFT_SUPER, fife.Key.RIGHT_SUPER):
 			self.metaPressed = False
 
 	
