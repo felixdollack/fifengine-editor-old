@@ -1,3 +1,4 @@
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
 # ####################################################################
@@ -28,8 +29,7 @@ Editor
 This class serves as 
 """
 
-import sys
-import os
+import sys, os
 import traceback
 
 fife_path = os.path.join('..','..','engine','python')
