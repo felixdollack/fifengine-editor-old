@@ -169,7 +169,7 @@ class MapController(object):
 			return
 
 		loc = fife.Location(self._layer)
-		loc.setLayerCoordinates(self._layer.getCellGrid().toLayerCoordinates(self.screenToMapCoordinates(screenx, screeny)))
+		loc.setMapCoordinates(self.screenToMapCoordinates(screenx, screeny))
 
 		for i in self._selection:
 			if loc.getLayerCoordinates() == i.getLayerCoordinates(): return
@@ -187,7 +187,7 @@ class MapController(object):
 			return
 
 		loc = fife.Location(self._layer)
-		loc.setLayerCoordinates(self._layer.getCellGrid().toLayerCoordinates(self.screenToMapCoordinates(screenx, screeny)))
+		loc.setMapCoordinates(self.screenToMapCoordinates(screenx, screeny))
 		
 		for i in self._selection[:]:
 			if loc.getLayerCoordinates() == i.getLayerCoordinates():
