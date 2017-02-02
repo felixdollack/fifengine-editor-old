@@ -74,6 +74,19 @@ class KeySequence(object):
 		self.modifiers = {"alt":False,"ctrl":False,"shift":False,"meta":False}
 		self.signal = None
 
+class KeyFilter(fife.IKeyFilter):
+	"""
+	This is the implementation of the fife.IKeyFilter class.
+
+	Prevents any filtered keys from being consumed by fifechan.
+	"""
+	def __init__(self, keys):
+		fife.IKeyFilter.__init__(self)
+		self._keys = keys
+
+	def isFiltered(self, event):
+		return event.getKey().getValue() in self._keys
+
 class EventListener:
 	# NOTE: As FIFEdit currently covers the entire screen with widgets,
 	#		FIFE doesn't receive any mouse or key events. Therefore we have to add
@@ -101,7 +114,11 @@ class EventListener:
 		eventmanager.addCommandListener(self.commandlistener)
 		eventmanager.addMouseListener(self.mouselistener)
 		get_manager().getConsole().setConsoleExecuter(self.consoleexecuter)
-		
+
+		keyfilter = KeyFilter([fife.Key.ESCAPE, fife.Key.F10])
+		keyfilter.__disown__()
+		eventmanager.setKeyFilter(keyfilter)
+
 		keyPressed.connect(self.keyPressed)
 		keyReleased.connect(self.keyReleased)
 		
