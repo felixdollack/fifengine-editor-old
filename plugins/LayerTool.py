@@ -185,7 +185,7 @@ class LayerTool(plugin.Plugin):
 			layerid = layer.getId()
 			subwrapper = pychan.widgets.HBox()
 
-			toggleVisibleButton = pychan.widgets.ToggleButton(hexpand=0, up_image="gui/icons/is_visible.png", down_image="gui/icons/is_visible.png", hover_image="gui/icons/is_visible.png")
+			toggleVisibleButton = pychan.widgets.ToggleButton(hexpand=False, up_image="gui/icons/is_visible.png", down_image="gui/icons/is_visible.png", hover_image="gui/icons/is_visible.png")
 			toggleVisibleButton.name = "toggle_" + layerid
 			if layer.areInstancesVisible():
 				toggleVisibleButton.toggled = True

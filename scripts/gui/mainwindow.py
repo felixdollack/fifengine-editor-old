@@ -80,7 +80,7 @@ class MainWindow(object):
 		self._menubar = MenuBar(min_size=(screen_width, bar_height), position=(0, 0))
 		
 		# Set up root widget
-		self._rootwidget = pychan.widgets.VBox(padding=0, vexpand=True, hexpand=True)
+		self._rootwidget = pychan.widgets.VBox(vexpand=True, hexpand=True)
 		self._rootwidget.min_size = \
 		self._rootwidget.max_size = (screen_width, screen_height)
 		self._rootwidget.opaque = False
@@ -89,7 +89,7 @@ class MainWindow(object):
 		self._centralwidget = pychan.widgets.VBox(vexpand=True, hexpand=True)
 		self._centralwidget.opaque = False
 		
-		middle = pychan.widgets.HBox(padding=0, vexpand=True, hexpand=True)
+		middle = pychan.widgets.HBox(vexpand=True, hexpand=True)
 		middle.opaque = False
 		
 		# Pychan bug? Adding a spacer instead of a container creates

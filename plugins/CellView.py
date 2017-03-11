@@ -980,7 +980,7 @@ class StackposEditWidget(object):
 		inc_callback = data['inc_callback']
 		dec_callback = data['dec_callback']
 
-		hbox = pychan.widgets.HBox(padding=0)
+		hbox = pychan.widgets.HBox()
 		hbox.base_color = (0,0,0,0)
 		hbox.size = hbox.min_size = hbox.max_size = _HBOX_SIZE
 		
