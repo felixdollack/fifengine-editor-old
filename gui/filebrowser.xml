@@ -1,18 +1,18 @@
 <Panel title="File Browser">
-	<HBox hexpand="1" vexpand="1">
-		<VBox hexpand="1">
+	<HBox hexpand="True" vexpand="True">
+		<VBox hexpand="True">
 			<Label name="dirLabel" text="Directories:"/>
 			<ScrollArea min_size="200,300">
 				<ListBox name="dirList"/>
 			</ScrollArea>
 		</VBox>
-		<VBox name="fileColumn" hexpand="1">
+		<VBox name="fileColumn" hexpand="True">
 			<Label name="fileLabel" text="Files:"/>
 			<ScrollArea min_size="200,300">
 				<ListBox name="fileList"/>
 			</ScrollArea>
 		</VBox>
-		<VBox hexpand="1">
+		<VBox hexpand="True">
 			<Button name="selectButton" text="Select"/>
 			<Spacer />
 			<Button name="closeButton" text="Close"/>

@@ -18,7 +18,7 @@
 			
 			</ScrollArea>
 			<Spacer size="1,0"/>
-			<Container size="150,150" position_technique="center:center" max_size="150,150" min_size="150,150" vexpand="False" border_size="2" base_color="50,50,50" opaque="1" >
+			<Container size="150,150" position_technique="center:center" fixed_size="150,150" vexpand="False" border_size="2" base_color="50,50,50" opaque="1" >
 				<Icon name="preview_icon" />
 			</Container>
 		</VBox>
@@ -29,11 +29,11 @@
 		</VBox>
 	</VBox>
 	<HBox name="horizontal_wrapper" hexpand="True" vexpand="True" padding="5">
-		<VBox hexpand="True" vexpand="True" max_size="200,200" size="200,200">
+		<VBox hexpand="True" vexpand="True" fixed_size="200,200">
 			<Button name="toggle_mode" text="Toggle Mode" />
 			<HBox>
 				<TextField name="search_field" />
-				<Button name="search_button" text="Search" hexpand="0"/>
+				<Button name="search_button" text="Search" hexpand="False"/>
 			</HBox>
 		
 			<ScrollArea name="namespace_area">
@@ -46,7 +46,7 @@
 				<ListBox name="object_list" />
 			
 			</ScrollArea>
-			<Container size="150,150" max_size="150,150" min_size="150,150" vexpand="False" base_color="50,50,50" opaque="1" >
+			<Container fixed_size="150,150" vexpand="False" base_color="50,50,50" opaque="1" >
 				<Icon name="preview_icon" />
 			</Container>
 		</HBox>

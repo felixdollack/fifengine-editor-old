@@ -58,7 +58,7 @@
 
 	<HBox>
 		<Label text=" y: " min_size="25,20"/>
-		<TextBox text="0" name="y_offset" size="30,20" min_size="30,20" max_size="30,20"/>
+		<TextBox text="0" name="y_offset" fixed_size="30,20"/>
 		<Button name="y_offset_up" text="+" max_size="20,20"/>
 		<Button name="y_offset_dn" text="-" max_size="20,20"/>
 	</HBox>

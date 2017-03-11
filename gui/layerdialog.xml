@@ -1,8 +1,8 @@
 <Panel title="Layer Editor" min_size="200, 220">
-	<VBox hexpand="1">
+	<VBox hexpand="True">
 		<HBox>
 			<Label name="layerLabel" text="Layer ID:" />
-			<TextField name="layerBox" hexpand="3" />
+			<TextField name="layerBox" hexpand="True" />
 		</HBox>
 		<Label name="pathingLabel" text="Pathfinding strategy:"/>
 		<DropDown name="pathingBox"/>
@@ -16,28 +16,28 @@
 		<DropDown name="gridBox"/>
 		<HBox>
 			<Label name="rotLabel" text="Rotation:" />
-			<TextField name="rotBox" text="0.0" hexpand="3" />
+			<TextField name="rotBox" text="0.0" hexpand="True" />
 		</HBox>
 		<HBox>
 			<Label name="scaleLabel" text="Scale:" />
-			<Label name="xScaleLabel" text="X:" hexpand="0"/>
+			<Label name="xScaleLabel" text="X:" hexpand="False"/>
 			<TextField name="xScaleBox" text="1.0"  min_size="45,10" />
-			<Label name="yScaleLabel" text="Y:" hexpand="0"/>
+			<Label name="yScaleLabel" text="Y:" hexpand="False"/>
 			<TextField name="yScaleBox" text="1.0"  min_size="45,10" />
-      <Label name="zScaleLabel" text="Z:" hexpand="0"/>
+      <Label name="zScaleLabel" text="Z:" hexpand="False"/>
       <TextField name="zScaleBox" text="1.0"  min_size="45,10" />
 		</HBox>
 		<HBox>
 			<Label name="offsetLabel" text="Offset:" />
-			<Label name="xOffsetLabel" text="X:" hexpand="0" />
+			<Label name="xOffsetLabel" text="X:" hexpand="False" />
 			<TextField name="xOffsetBox" text="0.0" min_size="45,10" />
-			<Label name="yOffsetLabel" text="Y:" hexpand="0" />
+			<Label name="yOffsetLabel" text="Y:" hexpand="False" />
 			<TextField name="yOffsetBox" text="0.0" min_size="45,10" />
-      <Label name="zOffsetLabel" text="Z:" hexpand="0" />
+      <Label name="zOffsetLabel" text="Z:" hexpand="False" />
       <TextField name="zOffsetBox" text="0.0" min_size="45,10" />
     </HBox>
 		<HBox>
-			<Label name="transLabel" text="Transparency:" hexpand="0" />
+			<Label name="transLabel" text="Transparency:" hexpand="False" />
 			<TextField name="transBox" text="0" min_size="45,10" />
 		</HBox>
 
@@ -59,9 +59,9 @@
       <Button name="interact_remove" text="Remove" helptext="Removes interact Layer" min_size="20,20" />
     </VBox>
     <VBox name="default_value_wrapper" padding="4">
-      <Label name="cache_cost_label" text="default cost multiplier:" hexpand="0" />
+      <Label name="cache_cost_label" text="default cost multiplier:" hexpand="False" />
       <TextField name="cache_cost_box" text="1.0" min_size="45,10" />
-      <Label name="cache_speed_label" text="default speed multiplier:" hexpand="0" />
+      <Label name="cache_speed_label" text="default speed multiplier:" hexpand="False" />
       <TextField name="cache_speed_box" text="1.0" min_size="45,10" />
     </VBox>
 

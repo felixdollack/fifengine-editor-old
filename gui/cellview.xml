@@ -64,8 +64,8 @@
 	<Label name="transition_wizard_section" text="           Transition creation ('Pathfinder portals')" background_color="0,0,0" />
 	<VBox name="transition_wizard_wrapper">
 		<HBox name="transition_wizard">
-			<ToggleButton name="transition_start" text="P" base_color="0,113,0,255" min_size="20,20" max_size="20,20" size="20,20" />
-			<ToggleButton name="transition_end" text="P" base_color="228,72,70,255" min_size="20,20" max_size="20,20" size="20,20" />
+			<ToggleButton name="transition_start" text="P" base_color="0,113,0,255" fixed_size="20,20" />
+			<ToggleButton name="transition_end" text="P" base_color="228,72,70,255" fixed_size="20,20" />
 			<Button name="transition_create" text="Create" min_size="20,20" />
 			<CheckBox name="transition_immediate" text="immediate" min_size="120,20" />
 		</HBox>		

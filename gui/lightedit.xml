@@ -19,21 +19,21 @@
 
     <HBox>
       <Label text="Stencil Test: " min_size="25,20"/>
-      <TextBox text="-1" name="stencil" size="30,20" min_size="30,20" max_size="30,20" />
+      <TextBox text="-1" name="stencil" fixed_size="30,20" />
       <Button name="stencil_up" text="+" max_size="20,20"/>
       <Button name="stencil_dn" text="-" max_size="20,20"/>
     </HBox>
 
     <HBox>
       <Label text="Src Blend Mode: " min_size="25,20"/>
-      <TextBox text="-1" name="src" size="30,20" min_size="30,20" max_size="30,20"/>
+      <TextBox text="-1" name="src" fixed_size="30,20"/>
       <Button name="src_up" text="+" max_size="20,20"/>
       <Button name="src_dn" text="-" max_size="20,20"/>
     </HBox>
 
     <HBox>
       <Label text="Dst Blend Mode: " min_size="25,20"/>
-      <TextBox text="-1" name="dst" size="30,20" min_size="30,20" max_size="30,20"/>
+      <TextBox text="-1" name="dst" fixed_size="30,20"/>
       <Button name="dst_up" text="+" max_size="20,20"/>
       <Button name="dst_dn" text="-" max_size="20,20"/>
     </HBox>
@@ -56,56 +56,56 @@
       <Label text="Simple Light" min_size="45,20"/>
       <HBox>
         <Label text="Intensity: " min_size="25,20"/>
-        <TextBox text="0" name="intensity" size="30,20" min_size="30,20" max_size="30,20" />
+        <TextBox text="0" name="intensity" fixed_size="30,20" />
         <Button name="intensity_up" text="+" max_size="20,20"/>
         <Button name="intensity_dn" text="-" max_size="20,20"/>
       </HBox>
 
       <HBox>
         <Label text="R: " min_size="25,20"/>
-        <TextBox text="0" name="red" size="30,20" min_size="30,20" max_size="30,20"/>
+        <TextBox text="0" name="red" fixed_size="30,20"/>
         <Button name="red_up" text="+" max_size="20,20"/>
         <Button name="red_dn" text="-" max_size="20,20"/>
       </HBox>
 
       <HBox>
         <Label text="G: " min_size="25,20"/>
-        <TextBox text="0" name="green" size="30,20" min_size="30,20" max_size="30,20"/>
+        <TextBox text="0" name="green" fixed_size="30,20"/>
         <Button name="green_up" text="+" max_size="20,20"/>
         <Button name="green_dn" text="-" max_size="20,20"/>
       </HBox>
 
       <HBox>
         <Label text="B: " min_size="25,20"/>
-        <TextBox text="0" name="blue" size="30,20" min_size="30,20" max_size="30,20"/>
+        <TextBox text="0" name="blue" fixed_size="30,20"/>
         <Button name="blue_up" text="+" max_size="20,20"/>
         <Button name="blue_dn" text="-" max_size="20,20"/>
       </HBox>
 
       <HBox>
         <Label text="Radius: " min_size="25,20"/>
-        <TextBox text="0" name="radius" size="30,20" min_size="30,20" max_size="30,20"/>
+        <TextBox text="0" name="radius" fixed_size="30,20"/>
         <Button name="radius_up" text="+" max_size="20,20"/>
         <Button name="radius_dn" text="-" max_size="20,20"/>
       </HBox>
 
       <HBox>
         <Label text="Subdivisions: " min_size="25,20"/>
-        <TextBox text="32" name="subdivisions" size="30,20" min_size="30,20" max_size="30,20"/>
+        <TextBox text="32" name="subdivisions" fixed_size="30,20"/>
         <Button name="subdivisions_up" text="+" max_size="20,20"/>
         <Button name="subdivisions_dn" text="-" max_size="20,20"/>
       </HBox>
 
       <HBox>
         <Label text="X-Stretch: " min_size="25,20"/>
-        <TextBox text="1" name="xstretch" size="30,20" min_size="30,20" max_size="30,20"/>
+        <TextBox text="1" name="xstretch" fixed_size="30,20"/>
         <Button name="xstretch_up" text="+" max_size="20,20"/>
         <Button name="xstretch_dn" text="-" max_size="20,20"/>
       </HBox>
 
       <HBox>
         <Label text="Y-Stretch: " min_size="25,20"/>
-        <TextBox text="1" name="ystretch" size="30,20" min_size="30,20" max_size="30,20"/>
+        <TextBox text="1" name="ystretch" fixed_size="30,20"/>
         <Button name="ystretch_up" text="+" max_size="20,20"/>
         <Button name="ystretch_dn" text="-" max_size="20,20"/>
       </HBox>
