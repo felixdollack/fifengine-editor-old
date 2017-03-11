@@ -1,20 +1,20 @@
 <Panel title="Object editor" position="10,200" min_size="200,250"> <!-- size="200,250" min_size="200,250" max_size="200,250" > -->
 	<HBox>
-		<Spacer min_size="150"/>
+		<Spacer min_size="150,0"/>
 		<ImageButton up_image="gui/icons/help.png" down_image="gui/icons/help.png" hover_image="gui/icons/help.png" name="show_help" text="      Help " />
 <!--
 		<ImageButton name="show_settings" text="Settings" />
 -->
 	</HBox>
 
-	<VBox hexpand="2">
+	<VBox hexpand="True">
 		<Label text=" Namespace" min_size="80,15"/>
 		<Label text="None" name="object_namespace"/>
 		<Label text=" Object id" min_size="80,15"/>
 		<Label text="None" name="object_id"/>
 	</VBox>
 
-	<HBox hexpand="2">
+	<HBox hexpand="True">
 		<VBox>
 			<Label text=" Cost id" min_size="80,20"/>
 			<Label text=" Cost" min_size="80,20"/>
@@ -23,7 +23,7 @@
 			<Label text=" Blocking " min_size="35,20"/>
 		</VBox>
 		
-		<VBox hexpand="2">
+		<VBox hexpand="True">
 			<TextBox text="None" name="cost_id"/>
 			<TextBox text="None" name="cost_value"/>
 			<Label text="None" name="object_cellstack_pos"/>
@@ -33,14 +33,14 @@
 	
 	</HBox>
 
-	<VBox padding="0" name="actions_wrapper" hexpand="1">
+	<VBox padding="0" name="actions_wrapper" hexpand="True">
 		<Label text="           Actions:" background_color="20,20,20" />
 		<ScrollArea min_size="85,40" horizontal_scrollbar="0">
 			<ListBox name="select_actions" />
 		</ScrollArea>
 	</VBox>		
 
-	<VBox padding="0" name="rotations_wrapper" hexpand="1">
+	<VBox padding="0" name="rotations_wrapper" hexpand="True">
 		<Label text="           Rotations:" background_color="20,20,20" />
 		<ScrollArea min_size="85,40" horizontal_scrollbar="0">
 			<ListBox name="select_rotations" />

@@ -37,8 +37,8 @@ class DockArea(widgets.VBox, ResizableBase):
 		self.cursor_id = 0
 		self.cursor_type = 0
 		
-		self.vexpand=0
-		self.hexpand=0
+		self.vexpand=False
+		self.hexpand=False
 		
 		self.side = side
 		self.resizable_top = (side == "bottom")
@@ -93,8 +93,8 @@ class DockArea(widgets.VBox, ResizableBase):
 	
 		if placeIn is None:
 			tabwidget = FakeTabWidget(resizable=True)
-			tabwidget.hexpand=1
-			tabwidget.vexpand=1
+			tabwidget.hexpand=True
+			tabwidget.vexpand=True
 		
 			if self.side == "left" or self.side == "right":
 				tabwidget.resizable_bottom = True
@@ -159,8 +159,8 @@ class DockArea(widgets.VBox, ResizableBase):
 		else:
 			self.gui = widgets.HBox()
 			
-		self.gui.vexpand = 1
-		self.gui.hexpand = 1
+		self.gui.vexpand = True
+		self.gui.hexpand = True
 		
 		self.addChild(self.gui)
 	

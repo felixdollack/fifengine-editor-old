@@ -1,5 +1,5 @@
 <Panel title="Camera Editor" min_size="250, 100">
-	<VBox hexpand="1">
+	<VBox hexpand="True">
 		<HBox>
 			<!-- Should be replaced with a dropdown box containing open maps -->
 			<Label name="mapLabel" text="Map ID:" min_size="100, 10" />
@@ -11,7 +11,7 @@
 			<TextField name="layerBox" min_size="100, 10" />
 		</HBox>
 
-		<Spacer fixed_size="10" />
+		<Spacer fixed_size="10,0" />
 		<HBox>
 			<Spacer />
 			<Label text="Camera settings" />
@@ -28,12 +28,12 @@
 		
 		<HBox>
 			<Label name="refLabel" text="Reference cell:" min_size="100, 10" />
-			<Label name="refWLabel" text="Width:" hexpand="0" />
+			<Label name="refWLabel" text="Width:" hexpand="False" />
 			<TextField name="refwBox" min_size="40, 10" />
 		</HBox>
 		<HBox>
-			<Spacer min_size="100" />
-			<Label name="refHLabel" text="Height:" hexpand="0" />
+			<Spacer min_size="100,0" />
+			<Label name="refHLabel" text="Height:" hexpand="False" />
 			<TextField name="refhBox" min_size="40, 10" />
 		</HBox>
 		<HBox>
@@ -46,12 +46,12 @@
 		</HBox>
     <HBox>
       <Label name="ztoyLabel" text="Z to Y value in pixel:" min_size="100, 10" />
-      <Label name="ztoyLabel" text="Original:" hexpand="0" />
+      <Label name="ztoyLabel" text="Original:" hexpand="False" />
       <TextField name="ztoyOBox" min_size="40, 10" />
     </HBox>
     <HBox>
-      <Spacer min_size="100" />
-      <Label name="ztoyLabel" text="New:" hexpand="0" />
+      <Spacer min_size="100,0" />
+      <Label name="ztoyLabel" text="New:" hexpand="False" />
       <TextField name="ztoyNBox" min_size="40, 10" />
     </HBox>
 	</VBox>

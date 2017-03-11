@@ -388,15 +388,15 @@ class ToolbarButton(widgets.VBox):
 		else:
 			if self._button_style != ToolBar.BUTTON_STYLE['TextOnly'] and len(self._action.icon) > 0:
 				if self._action.isCheckable():
-					icon = widgets.ToggleButton(hexpand=0, up_image=self._action.icon,down_image=self._action.icon,hover_image=self._action.icon,offset=(1,1))
+					icon = widgets.ToggleButton(hexpand=False, up_image=self._action.icon,down_image=self._action.icon,hover_image=self._action.icon,offset=(1,1))
 					icon.toggled = self._action.isChecked()
 				else:
-					icon = widgets.ImageButton(hexpand=0, up_image=self._action.icon,down_image=self._action.icon,hover_image=self._action.icon,offset=(1,1))
+					icon = widgets.ImageButton(hexpand=False, up_image=self._action.icon,down_image=self._action.icon,hover_image=self._action.icon,offset=(1,1))
 				icon.capture(self._action.activate)
 				
 			if self._button_style != ToolBar.BUTTON_STYLE['IconOnly'] or len(self._action.icon) <= 0:
 				if self._action.isCheckable():
-					text = widgets.ToggleButton(hexpand=0, text=self._action.text,offset=(1,1))
+					text = widgets.ToggleButton(hexpand=False, text=self._action.text,offset=(1,1))
 					text.toggled = self._action.isChecked()
 				else:
 					text = widgets.Button(text=self._action.text)
@@ -421,7 +421,7 @@ class ToolbarButton(widgets.VBox):
 				widget = icon
 			
 		widget.position_technique = "left:center"
-		widget.hexpand = 0
+		widget.hexpand = False
 		
 		self._widget = widget
 		self.addChild(self._widget)

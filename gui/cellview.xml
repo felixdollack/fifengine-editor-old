@@ -1,6 +1,6 @@
 <Panel title="Cell view" position="10,700" min_size="200,100">
 	<HBox>
-		<Spacer min_size="150"/>
+		<Spacer min_size="150,0"/>
 		<ImageButton up_image="gui/icons/help.png" down_image="gui/icons/help.png" hover_image="gui/icons/help.png" name="show_help" text="      Help " />
 	</HBox>
 

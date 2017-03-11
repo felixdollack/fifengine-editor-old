@@ -52,12 +52,12 @@ class MenuBar(widgets.HBox):
 		self.gui = widgets.HBox()
 		for i, menu in enumerate(self.menulist):
 			button = widgets.Button(name=menu.name, text=menu.name)
-			button.hexpand = 0
+			button.hexpand = False
 			button.capture(cbwa(self._showMenu, i))
 			self._buttonlist.append(button)
 			self.gui.addChild(button)
 			
-		self.gui.addSpacer(widgets.Spacer())
+		self.gui.addChild(widgets.Spacer())
 		
 		self.addChild(self.gui)
 		
@@ -304,7 +304,7 @@ class MenuButton(widgets.HBox):
 			if self._action.isCheckable():
 				text = widgets.ToggleButton(text=self._action.text)
 				text.toggled = self._action.isChecked()
-				text.hexpand = 1
+				text.hexpand = True
 			else:
 				text = widgets.Button(text=self._action.text)
 			text.min_size = (1, MENU_ICON_SIZE)
@@ -313,17 +313,17 @@ class MenuButton(widgets.HBox):
 
 			if hasIcon:
 				if self._action.isCheckable():
-					icon = widgets.ToggleButton(hexpand=0, up_image=self._action.icon,down_image=self._action.icon,hover_image=self._action.icon,offset=(1,1))
+					icon = widgets.ToggleButton(hexpand=False, up_image=self._action.icon,down_image=self._action.icon,hover_image=self._action.icon,offset=(1,1))
 					icon.toggled = self._action.isChecked()
 				else:
-					icon = widgets.ImageButton(hexpand=0, up_image=self._action.icon,down_image=self._action.icon,hover_image=self._action.icon,offset=(1,1))
+					icon = widgets.ImageButton(hexpand=False, up_image=self._action.icon,down_image=self._action.icon,hover_image=self._action.icon,offset=(1,1))
 
 			else:
 				if self._action.isCheckable():
-					icon = widgets.ToggleButton(hexpand=0, offset=(1,1))
+					icon = widgets.ToggleButton(hexpand=False, offset=(1,1))
 					icon.toggled = self._action.isChecked()
 				else:
-					icon = widgets.Button(text=u"", hexpand=0)
+					icon = widgets.Button(text=u"", hexpand=False)
 				
 			icon.min_size = icon.max_size = (MENU_ICON_SIZE, MENU_ICON_SIZE)
 			icon.capture(self._action.activate)
@@ -333,8 +333,8 @@ class MenuButton(widgets.HBox):
 			widget.addChild(text)
 			
 		widget.position_technique = "left:center"
-		widget.hexpand = 1
-		widget.vexpand = 0
+		widget.hexpand = True
+		widget.vexpand = False
 		
 		self._widget = widget
 		self.addChild(self._widget)
